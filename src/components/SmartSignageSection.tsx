@@ -8,9 +8,9 @@ import qrAscires from "@/assets/qr-ascires.png";
 import nfcWipass from "@/assets/nfc-wipass.png";
 
 const nfcUseCases = [
-  { icon: CheckCircle2, text: "Check-in automático al llegar al recinto" },
-  { icon: MapPin, text: "Puntos de información interactivos en cada planta" },
-  { icon: Smartphone, text: "Guía personalizada del usuario por todo el espacio" },
+  { icon: CheckCircle2, text: "Check-in automático del huésped al llegar al hotel" },
+  { icon: MapPin, text: "Puntos de información interactivos en cada planta y zona común" },
+  { icon: Smartphone, text: "Guía personalizada del huésped por todo el establecimiento" },
 ];
 
 const SmartSignageSection = () => (
