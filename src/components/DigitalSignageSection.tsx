@@ -108,8 +108,7 @@ const DigitalSignageSection = () => (
           <div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">E-Paper</h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Pantallas de papel electrónico a todo color para universidades: ideales para señalética de aulas, reservas
-              de salas, horarios, calendarios académicos y comunicación interna, con bajo consumo y máxima visibilidad.
+              Pantallas de papel electrónico a todo color para hoteles: ideales para señalética de habitaciones, puertas de salas de reuniones y eventos, directorios de planta, menús del restaurante y comunicación al huésped, con bajo consumo y máxima visibilidad.
             </p>
             <div className="flex flex-wrap gap-2.5 mt-4">
               {epaperBubbles.map((label, i) => (
