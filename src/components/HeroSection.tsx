@@ -30,10 +30,12 @@ const HeroSection = () => (
     {/* Content — proposal cover */}
     <div className="relative z-10 flex flex-col items-center gap-8 max-w-3xl w-full">
       {/* 1. Client logo */}
-      <motion.div {...fadeUp(0.1)}>
-        <div className="h-48 md:h-64 w-80 md:w-[28rem] bg-muted flex items-center justify-center text-muted-foreground text-sm uppercase tracking-[0.3em]">
-          Logo
-        </div>
+      <motion.div {...fadeUp(0.1)} className="flex items-center justify-center">
+        <img
+          src={conektaLogo}
+          alt="Conekta Visual Solutions"
+          className="h-40 md:h-56 w-auto object-contain"
+        />
       </motion.div>
 
       {/* 2. Label */}
