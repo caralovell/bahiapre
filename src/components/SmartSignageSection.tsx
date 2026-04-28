@@ -67,9 +67,9 @@ const SmartSignageSection = () => (
 
                 <ul className="space-y-2.5">
                   {[
-                    "Acceso sin instalación de apps",
-                    "Contenido actualizable en tiempo real",
-                    "Compatible con cualquier smartphone",
+                    "Acceso sin instalar apps en la habitación",
+                    "Carta y servicios actualizables en tiempo real",
+                    "Compatible con cualquier smartphone del huésped",
                   ].map((t, i) => (
                     <motion.li
                       key={t}
