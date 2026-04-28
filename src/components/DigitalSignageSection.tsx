@@ -100,14 +100,59 @@ const DigitalSignageSection = () => (
         </div>
       </ScrollReveal>
 
+      {/* Sub-section: E-Paper (compact) */}
+      <ScrollReveal>
+        <div className="max-w-4xl mx-auto grid md:grid-cols-[1fr_auto] gap-6 items-center mb-8">
+          <div>
+            <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">E-Paper</h3>
+            <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+              Pantallas de papel electrónico a todo color para universidades: ideales para señalética de aulas, reservas
+              de salas, horarios, calendarios académicos y comunicación interna, con bajo consumo y máxima visibilidad.
+            </p>
+            <div className="flex flex-wrap gap-2.5 mt-4">
+              {epaperBubbles.map((label, i) => (
+                <motion.span
+                  key={label}
+                  initial={{ opacity: 0, scale: 0.6, y: 10 }}
+                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ delay: i * 0.06, type: "spring", stiffness: 200, damping: 14 }}
+                  whileHover={{ scale: 1.08, y: -3 }}
+                  className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-sm font-medium text-foreground hover:bg-accent/20 hover:border-accent/60 transition-colors cursor-default shadow-sm"
+                >
+                  {label}
+                </motion.span>
+              ))}
+            </div>
+          </div>
+          <div className="flex gap-4 items-center">
+            <motion.div
+              whileHover={{ y: -4 }}
+              transition={{ type: "spring", stiffness: 200, damping: 18 }}
+              className="w-full max-w-[260px]"
+            >
+              <img
+                src={epaperDisplay}
+                alt="Pantalla de papel electrónico E-Paper"
+                className="w-full h-auto object-contain"
+                loading="lazy"
+                width={1024}
+                height={768}
+              />
+            </motion.div>
+          </div>
+        </div>
+      </ScrollReveal>
+
       {/* Sub-section: Gestión de Contenido (compact) */}
       <ScrollReveal>
         <div className="max-w-4xl mx-auto grid md:grid-cols-[1fr_auto] gap-6 items-center">
           <div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Gestión de Contenido</h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Gestionar y mostrar contenidos digitales en pantallas ubicadas en espacios físicos como tiendas, oficinas,
-              aeropuertos o centros comerciales
+              Gestiona y actualiza de forma centralizada la información digital del campus: avisos, eventos, horarios,
+              mapas, turnos, comunicación institucional y contenidos para pantallas en facultades, bibliotecas, accesos
+              y zonas comunes.
             </p>
           </div>
           <div className="flex gap-4 items-center">
