@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import LogopostLogo from "./LogopostLogo";
 import asciresLogo from "@/assets/ascires-logo.png";
+import conektaLogo from "@/assets/conekta-logo.png";
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 16 },
