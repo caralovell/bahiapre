@@ -8,9 +8,9 @@ import qrAscires from "@/assets/qr-ascires.png";
 import nfcWipass from "@/assets/nfc-wipass.png";
 
 const nfcUseCases = [
-  { icon: CheckCircle2, text: "Check-in automático al llegar al recinto" },
-  { icon: MapPin, text: "Puntos de información interactivos en cada planta" },
-  { icon: Smartphone, text: "Guía personalizada del usuario por todo el espacio" },
+  { icon: CheckCircle2, text: "Check-in automático del huésped al llegar al hotel" },
+  { icon: MapPin, text: "Puntos de información interactivos en cada planta y zona común" },
+  { icon: Smartphone, text: "Guía personalizada del huésped por todo el establecimiento" },
 ];
 
 const SmartSignageSection = () => (
@@ -32,8 +32,8 @@ const SmartSignageSection = () => (
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Smart Signage</h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Convierte la señalización tradicional en un punto de contacto inteligente. Un solo gesto del usuario,
-            infinitas posibilidades.
+            Convierte la señalización tradicional del hotel en un punto de contacto inteligente con el huésped. Un solo
+            gesto, infinitas posibilidades.
           </p>
         </div>
       </ScrollReveal>
@@ -61,15 +61,15 @@ const SmartSignageSection = () => (
                 </div>
 
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  Transforma tu negocio en un ecosistema inteligente impulsado por IA conversacional, datos en tiempo
-                  real y conectividad sin interrupciones.
+                  Ofrece a tus huéspedes acceso instantáneo a la carta del restaurante, room service, servicios del spa
+                  y guías de la ciudad. Sin descargas, sin esperas, desde su propio móvil.
                 </p>
 
                 <ul className="space-y-2.5">
                   {[
-                    "Acceso sin instalación de apps",
-                    "Contenido actualizable en tiempo real",
-                    "Compatible con cualquier smartphone",
+                    "Acceso sin instalar apps en la habitación",
+                    "Carta y servicios actualizables en tiempo real",
+                    "Compatible con cualquier smartphone del huésped",
                   ].map((t, i) => (
                     <motion.li
                       key={t}
@@ -128,8 +128,8 @@ const SmartSignageSection = () => (
               </div>
 
               <p className="text-sm text-muted-foreground leading-relaxed mb-5">
-                La solución integral que fusiona lo físico y digital para ofrecer experiencias phygital más inteligentes
-                y conectadas
+                La solución integral que fusiona lo físico y lo digital para ofrecer al huésped una experiencia hotelera
+                phygital más inteligente, fluida y conectada.
               </p>
 
               {/* NFC image */}

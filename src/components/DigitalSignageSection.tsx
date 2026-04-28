@@ -16,8 +16,8 @@ const totemSecondary = [
   { src: totem4, alt: "Tótem digital con anuncio en oficina corporativa" },
 ];
 
-const bubbles = ["Tótems interactivos", "Kioskos táctiles", "Gestión de colas", "Soluciones LED"];
-const epaperBubbles = ["Reserva de salas", "Señalética inteligente"];
+const bubbles = ["Tótems de bienvenida", "Check-in táctil", "Gestión de colas en recepción", "Pantallas LED para lobby"];
+const epaperBubbles = ["Señalética de habitaciones", "Reserva de salas de eventos"];
 
 const DigitalSignageSection = () => (
   <section id="digital-signage" className="py-12 md:py-16 bg-background">
@@ -35,8 +35,8 @@ const DigitalSignageSection = () => (
       <ScrollReveal delay={0.1}>
         <div className="max-w-4xl mx-auto text-center mb-10">
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Soluciones digitales orientadas a la gestión eficiente del campus, mejorando la comunicación interna y
-            ofreciendo información relevante en tiempo real a toda la comunidad universitaria.
+            Soluciones digitales orientadas a la gestión eficiente del hotel, mejorando la comunicación con el huésped y
+            ofreciendo información relevante en tiempo real en cada punto de contacto: recepción, lobby, restaurante y zonas comunes.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2.5 mt-6">
@@ -108,8 +108,7 @@ const DigitalSignageSection = () => (
           <div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">E-Paper</h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Pantallas de papel electrónico a todo color para universidades: ideales para señalética de aulas, reservas
-              de salas, horarios, calendarios académicos y comunicación interna, con bajo consumo y máxima visibilidad.
+              Pantallas de papel electrónico a todo color para hoteles: ideales para señalética de habitaciones, puertas de salas de reuniones y eventos, directorios de planta, menús del restaurante y comunicación al huésped, con bajo consumo y máxima visibilidad.
             </p>
             <div className="flex flex-wrap gap-2.5 mt-4">
               {epaperBubbles.map((label, i) => (
@@ -152,9 +151,9 @@ const DigitalSignageSection = () => (
           <div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Gestión de Contenido</h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Gestiona y actualiza de forma centralizada la información digital del campus: avisos, eventos, horarios,
-              mapas, turnos, comunicación institucional y contenidos para pantallas en facultades, bibliotecas, accesos
-              y zonas comunes.
+              Gestiona y actualiza de forma centralizada toda la información digital del hotel: bienvenida al huésped,
+              eventos, horarios del spa y restaurantes, mapas, menús digitales y contenidos para pantallas en recepción,
+              lobby, ascensores y zonas comunes.
             </p>
           </div>
           <div className="flex gap-4 items-center">

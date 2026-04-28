@@ -40,7 +40,7 @@ const ImmersiveSection = () => (
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight mb-3">Experiencia Inmersiva</h2>
           <p className="text-sm md:text-base text-muted-foreground">
-            Tecnologías complementarias que elevan la experiencia sensorial del espacio.
+            Tecnologías complementarias que elevan la experiencia sensorial del huésped en cada estancia.
           </p>
         </div>
       </ScrollReveal>

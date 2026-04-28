@@ -31,7 +31,7 @@ const NavilensSection = () => (
               </div>
 
               <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-                La nueva tecnología disruptiva de señalética para personas con discapacidad visual.
+                La nueva tecnología disruptiva de señalética que hace tu hotel plenamente accesible para huéspedes con discapacidad visual.
               </p>
             </div>
 
@@ -71,8 +71,8 @@ const NavilensSection = () => (
               </div>
 
               <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-                Creamos tecnología innovadora para personas con pérdida auditiva, y para empresas e instituciones
-                comprometidas con la accesibilidad.
+                Tecnología innovadora para huéspedes con pérdida auditiva, y para hoteles comprometidos con una
+                hospitalidad verdaderamente accesible.
               </p>
             </div>
 

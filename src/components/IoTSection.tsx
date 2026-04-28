@@ -4,10 +4,10 @@ import ScrollReveal from "./ScrollReveal";
 import iotTotem from "@/assets/iot-totem-dashboard.jpg";
 
 const features = [
-  { icon: LayoutDashboard, title: "Dashboards", desc: "Métricas clave en una sola vista." },
-  { icon: FileText, title: "Informes", desc: "Reportes en tiempo real e históricos." },
-  { icon: Bell, title: "Alertas", desc: "Notificaciones por email, SMS o push." },
-  { icon: Scale, title: "Escalable", desc: "Cientos de dispositivos en minutos." },
+  { icon: LayoutDashboard, title: "Dashboards", desc: "Ocupación y servicios en una sola vista." },
+  { icon: FileText, title: "Informes", desc: "Reportes en tiempo real e históricos del hotel." },
+  { icon: Bell, title: "Alertas", desc: "Avisos a recepción y mantenimiento al instante." },
+  { icon: Scale, title: "Escalable", desc: "De un boutique a una cadena en minutos." },
 ];
 
 const IoTSection = () => (
@@ -35,9 +35,9 @@ const IoTSection = () => (
         {/* Left: text + 4 cards */}
         <ScrollReveal direction="left">
           <p className="text-base text-muted-foreground leading-relaxed mb-6">
-            Convierte tu espacio en un entorno que{" "}
-            <strong className="text-foreground">recopila, analiza y reacciona</strong> en tiempo real. Sensores,
-            dashboards e IA trabajando juntos.
+            Convierte tu hotel en un entorno que{" "}
+            <strong className="text-foreground">recopila, analiza y reacciona</strong> en tiempo real. Sensores de
+            ocupación, climatización inteligente, dashboards e IA trabajando juntos para mejorar la experiencia del huésped.
           </p>
 
           <div className="grid grid-cols-2 gap-3">
