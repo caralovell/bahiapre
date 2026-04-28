@@ -61,8 +61,8 @@ const SmartSignageSection = () => (
                 </div>
 
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  Transforma tu negocio en un ecosistema inteligente impulsado por IA conversacional, datos en tiempo
-                  real y conectividad sin interrupciones.
+                  Ofrece a tus huéspedes acceso instantáneo a la carta del restaurante, room service, servicios del spa
+                  y guías de la ciudad. Sin descargas, sin esperas, desde su propio móvil.
                 </p>
 
                 <ul className="space-y-2.5">
