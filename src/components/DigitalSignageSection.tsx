@@ -3,10 +3,10 @@ import ScrollReveal from "./ScrollReveal";
 import cmsDashboard from "@/assets/dashboard-mockup.png";
 import player from "@/assets/android-media-player.jpg";
 import totemMain from "@/assets/totem-main.png";
-import totem1 from "@/assets/totem-1.jpg";
-import totem2 from "@/assets/totem-2.jpg";
-import totem3 from "@/assets/totem-3.jpg";
-import totem4 from "@/assets/totem-4.jpg";
+import totem1 from "@/assets/totem-1.png";
+import totem2 from "@/assets/totem-2.png";
+import totem3 from "@/assets/totem-3.png";
+import totem4 from "@/assets/totem-4.png";
 import epaperDisplay from "@/assets/epaper-display.jpg";
 
 const totemSecondary = [
