@@ -7,9 +7,7 @@ import totem1 from "@/assets/totem-1.jpg";
 import totem2 from "@/assets/totem-2.jpg";
 import totem3 from "@/assets/totem-3.jpg";
 import totem4 from "@/assets/totem-4.jpg";
-import epaperDisplay from "@/assets/epaper-display.jpg";
-
-const epaperBubbles = ["Señalética de aulas", "Reservas de salas", "Horarios", "Bajo consumo"];
+import epaperDisplay from "@/assets/epaper-display.png";
 
 const totemSecondary = [
   { src: totem1, alt: "Tótem digital con anuncio en centro comercial" },
@@ -19,6 +17,7 @@ const totemSecondary = [
 ];
 
 const bubbles = ["Tótems interactivos", "Kioskos táctiles", "Gestión de colas", "Soluciones LED"];
+const epaperBubbles = ["Reserva de salas", "Señalética inteligente"];
 
 const DigitalSignageSection = () => (
   <section id="digital-signage" className="py-12 md:py-16 bg-background">
@@ -36,8 +35,8 @@ const DigitalSignageSection = () => (
       <ScrollReveal delay={0.1}>
         <div className="max-w-4xl mx-auto text-center mb-10">
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Soluciones personalizadas que consiguen acercar tu marca a los usuarios de forma fácil y sencilla, creando
-            una experiencia única.
+            Soluciones digitales orientadas a la gestión eficiente del campus, mejorando la comunicación interna y
+            ofreciendo información relevante en tiempo real a toda la comunidad universitaria.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2.5 mt-6">
