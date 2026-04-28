@@ -9,17 +9,17 @@ const blocks = [
   {
     title: "Agente IA",
     img: aiAgent,
-    desc: "Asistente conversacional que automatiza procesos, atiende consultas y guía a usuarios y personal en tiempo real.",
+    desc: "Asistente conversacional que automatiza reservas, atiende consultas del huésped y gestiona peticiones a recepción 24/7.",
   },
   {
     title: "Avatar IA",
     img: aiAvatar,
-    desc: "Avatar virtual humano y empático que interactúa por voz y gesto en pantallas y tótems de forma accesible.",
+    desc: "Conserje virtual humano y empático que recibe al huésped por voz y gesto en pantallas y tótems del lobby.",
   },
   {
     title: "IA Adaptable",
     img: aiAdaptive,
-    desc: "Asistente personalizable que aprende del entorno y adapta tono, respuestas y capacidades a cada caso de uso.",
+    desc: "Asistente personalizable que aprende del hotel y adapta tono, idioma y respuestas a cada perfil de huésped.",
   },
 ];
 
