@@ -32,8 +32,8 @@ const SmartSignageSection = () => (
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Smart Signage</h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Convierte la señalización tradicional en un punto de contacto inteligente. Un solo gesto del usuario,
-            infinitas posibilidades.
+            Convierte la señalización tradicional del hotel en un punto de contacto inteligente con el huésped. Un solo
+            gesto, infinitas posibilidades.
           </p>
         </div>
       </ScrollReveal>
