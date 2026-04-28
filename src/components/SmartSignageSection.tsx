@@ -128,8 +128,8 @@ const SmartSignageSection = () => (
               </div>
 
               <p className="text-sm text-muted-foreground leading-relaxed mb-5">
-                La solución integral que fusiona lo físico y digital para ofrecer experiencias phygital más inteligentes
-                y conectadas
+                La solución integral que fusiona lo físico y lo digital para ofrecer al huésped una experiencia hotelera
+                phygital más inteligente, fluida y conectada.
               </p>
 
               {/* NFC image */}
