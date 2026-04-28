@@ -16,8 +16,8 @@ const totemSecondary = [
   { src: totem4, alt: "Tótem digital con anuncio en oficina corporativa" },
 ];
 
-const bubbles = ["Tótems interactivos", "Kioskos táctiles", "Gestión de colas", "Soluciones LED"];
-const epaperBubbles = ["Reserva de salas", "Señalética inteligente"];
+const bubbles = ["Tótems de bienvenida", "Check-in táctil", "Gestión de colas en recepción", "Pantallas LED para lobby"];
+const epaperBubbles = ["Señalética de habitaciones", "Reserva de salas de eventos"];
 
 const DigitalSignageSection = () => (
   <section id="digital-signage" className="py-12 md:py-16 bg-background">
