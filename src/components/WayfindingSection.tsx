@@ -21,7 +21,8 @@ const WayfindingSection = () => (
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Digital Wayfinding</h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Navegación interior interactiva que guía a usuarios y visitantes por cualquier espacio con
+            Navegación interior interactiva que guía a huéspedes y visitantes por todo el hotel — habitaciones, salas
+            de eventos, spa, restaurantes y zonas comunes — con
             <strong className="text-foreground"> rutas en tiempo real</strong>, zonas codificadas y orientación paso a
             paso.
           </p>
