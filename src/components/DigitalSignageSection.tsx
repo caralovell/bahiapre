@@ -151,9 +151,9 @@ const DigitalSignageSection = () => (
           <div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Gestión de Contenido</h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Gestiona y actualiza de forma centralizada la información digital del campus: avisos, eventos, horarios,
-              mapas, turnos, comunicación institucional y contenidos para pantallas en facultades, bibliotecas, accesos
-              y zonas comunes.
+              Gestiona y actualiza de forma centralizada toda la información digital del hotel: bienvenida al huésped,
+              eventos, horarios del spa y restaurantes, mapas, menús digitales y contenidos para pantallas en recepción,
+              lobby, ascensores y zonas comunes.
             </p>
           </div>
           <div className="flex gap-4 items-center">
