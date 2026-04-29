@@ -61,6 +61,8 @@ const ImmersiveSection = () => (
                     ? { objectPosition: "65% center" }
                     : it.title === "Hologramas"
                     ? { objectPosition: "40% center" }
+                    : it.title === "Mkt Sensorial"
+                    ? { objectPosition: "30% center" }
                     : undefined
                 }
                 loading="lazy"
