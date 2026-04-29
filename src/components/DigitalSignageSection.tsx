@@ -12,7 +12,7 @@ import epaperDisplay from "@/assets/epaper-display.jpg";
 const totemSecondary = [
   { src: totem1, alt: "Tótem digital en lobby de hotel", position: "25% center" },
   { src: totem2, alt: "Tótem digital con anuncio en aeropuerto", position: "center" },
-  { src: totem3, alt: "Tótem digital con anuncio en museo", position: "center" },
+  { src: totem3, alt: "Tótem digital con anuncio en museo", position: "25% center" },
   { src: totem4, alt: "Tótem digital con anuncio en oficina corporativa", position: "center" },
 ];
 
