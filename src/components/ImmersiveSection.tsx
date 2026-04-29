@@ -56,6 +56,7 @@ const ImmersiveSection = () => (
                 src={it.img}
                 alt={it.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                style={it.title === "Robótica" ? { objectPosition: "65% center" } : undefined}
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500" />
