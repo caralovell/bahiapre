@@ -10,10 +10,10 @@ import totem4 from "@/assets/totem-4.png";
 import epaperDisplay from "@/assets/epaper-display.jpg";
 
 const totemSecondary = [
-  { src: totem1, alt: "Tótem digital con anuncio en centro comercial" },
-  { src: totem2, alt: "Tótem digital con anuncio en aeropuerto" },
-  { src: totem3, alt: "Tótem digital con anuncio en museo" },
-  { src: totem4, alt: "Tótem digital con anuncio en oficina corporativa" },
+  { src: totem1, alt: "Tótem digital en lobby de hotel", position: "25% center" },
+  { src: totem2, alt: "Tótem digital con anuncio en aeropuerto", position: "center" },
+  { src: totem3, alt: "Tótem digital con anuncio en museo", position: "center" },
+  { src: totem4, alt: "Tótem digital con anuncio en oficina corporativa", position: "center" },
 ];
 
 const bubbles = ["Tótems interactivos", "Kioskos táctiles", "Gestión de colas", "Soluciones LED"];
@@ -91,6 +91,7 @@ const DigitalSignageSection = () => (
                   src={t.src}
                   alt={t.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  style={{ objectPosition: t.position }}
                   loading="lazy"
                   width={896}
                   height={1152}
