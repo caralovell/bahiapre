@@ -31,11 +31,7 @@ const HeroSection = () => (
     <div className="relative z-10 flex flex-col items-center gap-8 max-w-3xl w-full">
       {/* 1. Client logo */}
       <motion.div {...fadeUp(0.1)} className="flex items-center justify-center">
-        <img
-          src={conektaLogo}
-          alt="Conekta Visual Solutions"
-          className="h-40 md:h-56 w-auto object-contain"
-        />
+        <img src={conektaLogo} alt="Conekta Visual Solutions" className="h-30 md:h-50 w-auto object-contain" />
       </motion.div>
 
       {/* 2. Label */}
