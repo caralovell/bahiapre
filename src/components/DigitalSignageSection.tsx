@@ -35,8 +35,8 @@ const DigitalSignageSection = () => (
       <ScrollReveal delay={0.1}>
         <div className="max-w-4xl mx-auto text-center mb-10">
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Soluciones digitales orientadas a la gestión eficiente del campus, mejorando la comunicación interna y
-            ofreciendo información relevante en tiempo real a toda la comunidad universitaria.
+            Soluciones digitales orientadas a la gestión eficiente del hotel, mejorando la comunicación con el huésped y
+            ofreciendo información relevante en tiempo real en lobby, restaurantes, salas y zonas comunes.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2.5 mt-6">
