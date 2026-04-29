@@ -30,8 +30,8 @@ const HeroSection = () => (
     {/* Content — proposal cover */}
     <div className="relative z-10 flex flex-col items-center gap-8 max-w-3xl w-full">
       {/* 1. Client logo */}
-      <motion.div {...fadeUp(0.1)} className="flex items-center justify-center">
-        <img src={conektaLogo} alt="Conekta Visual Solutions" className="h-20 md:h-40 w-auto object-contain" />
+      <motion.div {...fadeUp(0.1)}>
+        <img src={conektaLogo} alt="Conekta Visual Solutions" className="h-24 md:h-28 w-auto object-contain" />
       </motion.div>
 
       {/* 2. Label */}
@@ -41,7 +41,7 @@ const HeroSection = () => (
 
       {/* 3. Logopost logo — main anchor */}
       <motion.div {...fadeUp(0.4)}>
-        <LogopostLogo className="h-12 md:h-14 w-auto" />
+        <LogopostLogo className="h-10 md:h-12 w-auto" />
       </motion.div>
 
       {/* 3.5 Tagline */}
@@ -56,13 +56,14 @@ const HeroSection = () => (
       {/* 4. Proposal info */}
       <motion.div className="flex flex-col items-center gap-1.5 mt-2" {...fadeUp(0.6)}>
         <p className="text-sm text-muted-foreground">
-          <span className="opacity-60">Nombre de cliente:</span> <span className="text-foreground/80">[Cliente]</span>
+          <span className="opacity-60">Nombre de cliente:</span>{" "}
+          <span className="text-foreground/80">Conekta Visual</span>
           <span className="mx-3 opacity-30">|</span>
-          <span className="opacity-60">Fecha:</span> <span className="text-foreground/80">[DD/MM/AAAA]</span>
+          <span className="opacity-60">Fecha:</span> <span className="text-foreground/80">29/04/2026</span>
         </p>
         <p className="text-sm text-muted-foreground">
-          <span className="opacity-60">Persona de contacto:</span>{" "}
-          <span className="text-foreground/80">[Nombre y apellidos]</span>
+          <span className="opacity-60">Personas de contacto:</span>{" "}
+          <span className="text-foreground/80">Yolanda Martínez y Nuria Pons</span>
         </p>
         <p className="text-sm text-muted-foreground">
           <span className="opacity-60">Creado por:</span> <span className="text-foreground/80">David Ochoa Tapia</span>
