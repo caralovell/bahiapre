@@ -138,7 +138,7 @@ const DigitalSignageSection = () => (
               <img
                 src={epaperDisplay}
                 alt="Pantalla de papel electrónico E-Paper"
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain rounded-2xl"
                 loading="lazy"
                 width={1024}
                 height={768}
