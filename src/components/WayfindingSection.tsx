@@ -21,8 +21,8 @@ const WayfindingSection = () => (
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Digital Wayfinding</h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Navegación inteligente en interiores que guía al huésped por el hotel con rutas en tiempo real,
-            localización de habitaciones, restaurantes, spa y servicios, y orientación paso a paso entre plantas y zonas comunes.
+            Navegación inteligente en interiores que guía al huésped por el hotel con rutas en tiempo real, localización
+            de habitaciones, restaurantes, spa y servicios, y orientación paso a paso entre plantas y zonas comunes.
           </p>
         </div>
       </ScrollReveal>
@@ -83,7 +83,11 @@ const WayfindingSection = () => (
             <p className="text-sm text-muted-foreground leading-relaxed">
               Explora una demo interactiva del mapa de navegación digital.
             </p>
-            <a href="https://digital.logopost.es/landing5/mapa.html" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://map-viewer.situm.com/hardrock_riviera_maya?wl=true&lng=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="group relative bg-gradient-to-r from-accent to-accent/70 text-accent-foreground px-6 py-3 rounded-full font-bold text-sm transition-all duration-300 hover:shadow-[0_0_40px_hsl(var(--accent)/0.3)] hover:scale-[1.03] flex items-center overflow-hidden">
                 <span className="mr-7 transition-opacity duration-500 group-hover:opacity-0">Ver mapa</span>
                 <span className="absolute right-1 top-1 bottom-1 rounded-full z-10 grid w-8 place-items-center transition-all duration-500 bg-accent-foreground/20 group-hover:w-[calc(100%-0.5rem)] group-active:scale-95">
