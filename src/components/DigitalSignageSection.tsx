@@ -35,8 +35,8 @@ const DigitalSignageSection = () => (
       <ScrollReveal delay={0.1}>
         <div className="max-w-4xl mx-auto text-center mb-10">
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Soluciones digitales orientadas a la gestión eficiente del campus, mejorando la comunicación interna y
-            ofreciendo información relevante en tiempo real a toda la comunidad universitaria.
+            Soluciones digitales orientadas a la gestión eficiente del hotel, mejorando la comunicación con el huésped y
+            ofreciendo información relevante en tiempo real en lobby, restaurantes, salas y zonas comunes.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2.5 mt-6">
@@ -109,8 +109,8 @@ const DigitalSignageSection = () => (
           <div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">E-Paper</h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Pantallas de papel electrónico a todo color para universidades: ideales para señalética de aulas, reservas
-              de salas, horarios, calendarios académicos y comunicación interna, con bajo consumo y máxima visibilidad.
+              Pantallas de papel electrónico a todo color para hoteles: ideales para señalética de habitaciones, reserva
+              de salas de reuniones, directorios, menús del día y comunicación con el huésped, con bajo consumo y máxima visibilidad.
             </p>
             <div className="flex flex-wrap gap-2.5 mt-4">
               {epaperBubbles.map((label, i) => (
@@ -153,9 +153,9 @@ const DigitalSignageSection = () => (
           <div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Gestión de Contenido</h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Gestiona y actualiza de forma centralizada la información digital del campus: avisos, eventos, horarios,
-              mapas, turnos, comunicación institucional y contenidos para pantallas en facultades, bibliotecas, accesos
-              y zonas comunes.
+              Gestiona y actualiza de forma centralizada la información digital del hotel: ofertas, eventos, menús,
+              promociones, comunicación al huésped y contenidos para pantallas en lobby, restaurantes, spa, salas de
+              reuniones y zonas comunes.
             </p>
           </div>
           <div className="flex gap-4 items-center">

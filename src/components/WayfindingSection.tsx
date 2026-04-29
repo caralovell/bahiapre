@@ -21,8 +21,8 @@ const WayfindingSection = () => (
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Digital Wayfinding</h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Navegación inteligente en interiores que guía a estudiantes y visitantes por el campus con rutas en tiempo
-            real, localización de aulas, servicios y orientación paso a paso entre edificios y espacios universitarios.
+            Navegación inteligente en interiores que guía al huésped por el hotel con rutas en tiempo real,
+            localización de habitaciones, restaurantes, spa y servicios, y orientación paso a paso entre plantas y zonas comunes.
           </p>
         </div>
       </ScrollReveal>
