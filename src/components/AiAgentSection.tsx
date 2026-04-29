@@ -81,11 +81,11 @@ const AiAgentSection = () => {
                     whileHover={{ scale: 1.06, y: arcOffsets[i] - 14, rotate: 0 }}
                   >
                     <div className="relative w-[200px] md:w-[240px] rounded-2xl overflow-hidden shadow-xl border border-border hover:border-accent/50 bg-card transition-colors duration-300">
-                      <div className="relative overflow-hidden aspect-[16/10]">
+                      <div className="relative overflow-hidden aspect-[16/10] bg-surface">
                         <img
                           src={b.img}
                           alt={b.title}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          className={`w-full h-full transition-transform duration-700 group-hover:scale-110 ${i === 0 ? "object-contain" : "object-cover"}`}
                           loading="lazy"
                         />
                       </div>
