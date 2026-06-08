@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
 import { useEffect, useRef } from "react";
-import aiAgent from "@/assets/ai-agent.jpg";
+import aiAgent from "@/assets/bahiarobo.png";
 import aiAvatar from "@/assets/ai-avatar.jpg";
 import aiAdaptive from "@/assets/ai-adaptive.jpg";
 
