@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import LogopostLogo from "./LogopostLogo";
 import asciresLogo from "@/assets/ascires-logo.png";
-import conektaLogo from "@/assets/conekta-logo.png";
+import bahia from "@/assets/bahia.png";
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 16 },
@@ -31,7 +31,7 @@ const HeroSection = () => (
     <div className="relative z-10 flex flex-col items-center gap-8 max-w-3xl w-full">
       {/* 1. Client logo */}
       <motion.div {...fadeUp(0.1)}>
-        <img src={conektaLogo} alt="Conekta Visual Solutions" className="h-24 md:h-28 w-auto object-contain" />
+        <img src={bahia} alt="Bahia principe" className="h-24 md:h-28 w-auto object-contain" />
       </motion.div>
 
       {/* 2. Label */}
@@ -57,13 +57,13 @@ const HeroSection = () => (
       <motion.div className="flex flex-col items-center gap-1.5 mt-2" {...fadeUp(0.6)}>
         <p className="text-sm text-muted-foreground">
           <span className="opacity-60">Nombre de cliente:</span>{" "}
-          <span className="text-foreground/80">Conekta Visual</span>
+          <span className="text-foreground/80">Bahía Principe</span>
           <span className="mx-3 opacity-30">|</span>
-          <span className="opacity-60">Fecha:</span> <span className="text-foreground/80">29/04/2026</span>
+          <span className="opacity-60">Fecha:</span> <span className="text-foreground/80">10/06/2026</span>
         </p>
         <p className="text-sm text-muted-foreground">
           <span className="opacity-60">Personas de contacto:</span>{" "}
-          <span className="text-foreground/80">Yolanda Martínez y Nuria Pons</span>
+          <span className="text-foreground/80">Marian Ribot y Daniel Rayo Masis</span>
         </p>
         <p className="text-sm text-muted-foreground">
           <span className="opacity-60">Creado por:</span> <span className="text-foreground/80">David Ochoa Tapia</span>
