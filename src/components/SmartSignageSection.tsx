@@ -30,7 +30,11 @@ const SmartSignageSection = () => (
           <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-4">
             02
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Smart Signage</h2>
+
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+            Smart Signage
+          </h2>
+
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             Convierte la señalización tradicional del hotel en un punto de contacto inteligente con el huésped. Un solo
             gesto, infinitas posibilidades.
@@ -54,9 +58,15 @@ const SmartSignageSection = () => (
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <img src={iconQr} alt="QR" className="h-10 object-contain" />
+
                   <div>
-                    <span className="text-[10px] uppercase tracking-[0.2em] text-accent font-bold">Acceso rápido</span>
-                    <h3 className="text-2xl font-bold text-foreground">Códigos QR</h3>
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-accent font-bold">
+                      Acceso rápido
+                    </span>
+
+                    <h3 className="text-2xl font-bold text-foreground">
+                      Códigos QR
+                    </h3>
                   </div>
                 </div>
 
@@ -79,7 +89,10 @@ const SmartSignageSection = () => (
                       transition={{ delay: 0.2 + i * 0.08 }}
                       className="flex items-start gap-2.5 text-sm text-foreground/90"
                     >
-                      <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" strokeWidth={2.5} />
+                      <CheckCircle2
+                        className="w-4 h-4 text-accent shrink-0 mt-0.5"
+                        strokeWidth={2.5}
+                      />
                       <span>{t}</span>
                     </motion.li>
                   ))}
@@ -93,14 +106,17 @@ const SmartSignageSection = () => (
                   animate={{ scale: [1, 1.1, 1], opacity: [0.4, 0.7, 0.4] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 />
-                <motion.img
-                  src={qrAscires}
-                  alt="qr signage"
-                  className="relative w-full max-w-[220px] rounded-2xl shadow-xl object-cover h-full"
-                  whileHover={{ scale: 1.05, rotate: 2 }}
-                  transition={{ duration: 0.3 }}
-                  loading="lazy"
-                />
+
+                <div className="relative bg-white rounded-2xl shadow-xl p-3">
+                  <motion.img
+                    src={qrAscires}
+                    alt="qr signage"
+                    className="w-[220px] max-w-full object-contain"
+                    whileHover={{ scale: 1.05, rotate: 2 }}
+                    transition={{ duration: 0.3 }}
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </motion.div>
@@ -119,11 +135,15 @@ const SmartSignageSection = () => (
             <div className="relative">
               <div className="flex items-center gap-3 mb-5">
                 <img src={iconNfc} alt="NFC" className="h-14 object-contain" />
+
                 <div>
                   <span className="text-[10px] uppercase tracking-[0.2em] text-accent font-bold">
                     Sin apps · Sin cámara
                   </span>
-                  <h3 className="text-2xl font-bold text-foreground">Dispositivos NFC</h3>
+
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Dispositivos NFC
+                  </h3>
                 </div>
               </div>
 
@@ -142,6 +162,7 @@ const SmartSignageSection = () => (
                   transition={{ duration: 0.5 }}
                   loading="lazy"
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent" />
               </div>
             </div>
