@@ -6,7 +6,7 @@ import totemMain from "@/assets/uno.png";
 import totem1 from "@/assets/dos.png";
 import totem2 from "@/assets/tres.png";
 import totem3 from "@/assets/cuatro.png";
-import totem4 from "@/assets/CINCO.png";
+import totem4 from "@/assets/cinco.png";
 import epaperDisplay from "@/assets/epaper-display.jpg";
 
 const totemSecondary = [
