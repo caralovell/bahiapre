@@ -1,5 +1,5 @@
 import ScrollReveal from "./ScrollReveal";
-import robotics from "@/assets/immersive-robotics.jpg";
+import robotics from "@/assets/robooo.png";
 import vr from "@/assets/immersive-vr.jpg";
 import aroma from "@/assets/immersive-aroma.jpg";
 import hologram from "@/assets/immersive-hologram.jpg";
