@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { LayoutDashboard, FileText, Bell, Scale } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-import iotTotem from "@/assets/bahiaiot.png";
+import iotTotem from "@/assets/totemm.png";
 
 const features = [
   { icon: LayoutDashboard, title: "Dashboards", desc: "Ocupación y servicios en una sola vista." },
@@ -25,7 +25,7 @@ const IoTSection = () => (
       <ScrollReveal>
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-4">
-            05
+            04
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">Soluciones IoT</h2>
         </div>
