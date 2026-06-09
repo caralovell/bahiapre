@@ -21,7 +21,6 @@ const IoTSection = () => (
     />
 
     <div className="container mx-auto px-4 relative z-10">
-      {/* Header */}
       <ScrollReveal>
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-4">
@@ -32,7 +31,6 @@ const IoTSection = () => (
       </ScrollReveal>
 
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-5xl mx-auto">
-        {/* Left: text + 4 cards */}
         <ScrollReveal direction="left">
           <p className="text-base text-muted-foreground leading-relaxed mb-6">
             Convierte tu hotel en un entorno que{" "}
@@ -43,6 +41,7 @@ const IoTSection = () => (
           <div className="grid grid-cols-2 gap-3">
             {features.map((f, i) => {
               const Icon = f.icon;
+
               return (
                 <motion.div
                   key={f.title}
@@ -56,6 +55,7 @@ const IoTSection = () => (
                   <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
                     <Icon className="w-4 h-4 text-accent" strokeWidth={2} />
                   </div>
+
                   <h4 className="text-sm font-bold text-foreground mb-0.5">{f.title}</h4>
                   <p className="text-xs text-muted-foreground leading-relaxed">{f.desc}</p>
                 </motion.div>
@@ -64,27 +64,23 @@ const IoTSection = () => (
           </div>
         </ScrollReveal>
 
-        {/* Right: image */}
         <ScrollReveal direction="right" delay={0.1}>
-          <div className="relative max-w-xs mx-auto">
+          <div className="relative max-w-xs mx-auto flex justify-center">
             <motion.div
               className="absolute -inset-6 rounded-[2rem] blur-3xl opacity-40"
               style={{ background: "radial-gradient(circle, hsl(var(--accent) / 0.3), transparent 70%)" }}
               animate={{ opacity: [0.3, 0.55, 0.3] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             />
-            <motion.div
-              className="relative rounded-2xl overflow-hidden shadow-2xl border border-accent/20"
+
+            <motion.img
+              src={iotTotem}
+              alt="Dashboard IoT en tiempo real"
+              className="relative z-10 w-full max-w-[280px] h-auto object-contain drop-shadow-2xl"
+              loading="lazy"
               whileHover={{ y: -6 }}
               transition={{ type: "spring", stiffness: 200, damping: 18 }}
-            >
-              <img
-                src={iotTotem}
-                alt="Dashboard IoT en tiempo real"
-                className="w-full h-auto object-cover aspect-[4/5]"
-                loading="lazy"
-              />
-            </motion.div>
+            />
           </div>
         </ScrollReveal>
       </div>
