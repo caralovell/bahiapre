@@ -8,6 +8,7 @@ import ImmersiveSection from "@/components/ImmersiveSection";
 import BudgetSection from "@/components/BudgetSection";
 import FooterSection from "@/components/FooterSection";
 import SectionDivider from "@/components/SectionDivider";
+import RoboticsSection from "@/components/RoboticsSection";
 
 const Index = () => (
   <div className="min-h-screen">
@@ -22,6 +23,8 @@ const Index = () => (
     <IoTSection />
     <SectionDivider />
     <AiAgentSection />
+    <SectionDivider />
+    <RoboticsSection />
     <SectionDivider />
     <ImmersiveSection />
     <BudgetSection />
