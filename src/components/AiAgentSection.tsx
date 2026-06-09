@@ -7,13 +7,11 @@ const blocks = [
   {
     title: "Agente IA",
     img: aiAgent,
-    url: "https://demo-logopost.com/agente-ia",
     desc: "Asistente conversacional que automatiza reservas, atiende consultas del huésped y gestiona peticiones a recepción 24/7.",
   },
   {
     title: "Avatar IA",
     img: aiAvatar,
-    url: "https://demo-logopost.com/avatar-ia",
     desc: "Conserje virtual humano y empático que recibe al huésped por voz y gesto en pantallas y tótems del lobby.",
   },
 ];
@@ -54,10 +52,7 @@ const AiAgentSection = () => {
         <div className="grid md:grid-cols-2 gap-8 lg:gap-10 max-w-5xl mx-auto">
           {blocks.map((b, i) => (
             <ScrollReveal key={b.title} delay={i * 0.1}>
-              <motion.a
-                href={b.url}
-                target="_blank"
-                rel="noopener noreferrer"
+              <motion.div
                 className="group block relative"
                 whileHover={{ y: -8 }}
                 transition={{ type: "spring", stiffness: 220, damping: 20 }}
@@ -84,14 +79,6 @@ const AiAgentSection = () => {
                       }`}
                       loading="lazy"
                     />
-
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80" />
-
-                    <div className="absolute bottom-5 left-5 right-5">
-                      <span className="inline-flex items-center rounded-full bg-white/15 backdrop-blur-md px-4 py-2 text-xs font-bold text-white border border-white/20">
-                        Ver demo
-                      </span>
-                    </div>
                   </div>
 
                   <div className="p-6">
@@ -104,7 +91,7 @@ const AiAgentSection = () => {
                     </p>
                   </div>
                 </div>
-              </motion.a>
+              </motion.div>
             </ScrollReveal>
           ))}
         </div>
