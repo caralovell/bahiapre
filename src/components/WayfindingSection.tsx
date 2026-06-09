@@ -17,7 +17,7 @@ const WayfindingSection = () => (
       <ScrollReveal>
         <div className="text-center max-w-3xl mx-auto mb-6">
           <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-4">
-            04
+            03
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Digital Wayfinding</h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
