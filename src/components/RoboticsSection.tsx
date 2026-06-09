@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Bot, Handshake, Sparkles } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-import roboticaImg from "@/assets/roboo.png";
+import roboticaImg from "@/assets/robooo.png";
 
 const RoboticsSection = () => {
   return (
