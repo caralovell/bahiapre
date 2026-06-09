@@ -52,7 +52,7 @@ const AiAgentSection = () => {
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-8">
             <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-3">
-              06
+              05
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">Inteligencia Artificial</h2>
           </div>
