@@ -1,11 +1,9 @@
 import ScrollReveal from "./ScrollReveal";
-import robotics from "@/assets/robooo.png";
 import vr from "@/assets/immersive-vr.jpg";
 import aroma from "@/assets/immersive-aroma.jpg";
 import hologram from "@/assets/immersive-hologram.jpg";
 
 const items = [
-  { title: "Robótica", img: robotics },
   { title: "Realidad Virtual", img: vr },
   { title: "Mkt Sensorial", img: aroma },
   { title: "Hologramas", img: hologram },
@@ -36,7 +34,7 @@ const ImmersiveSection = () => (
       <ScrollReveal>
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-4">
-            07
+            06
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight mb-3">Experiencia Inmersiva</h2>
           <p className="text-sm md:text-base text-muted-foreground">
@@ -57,9 +55,7 @@ const ImmersiveSection = () => (
                 alt={it.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 style={
-                  it.title === "Robótica"
-                    ? { objectPosition: "65% center" }
-                    : it.title === "Hologramas"
+it.title === "Hologramas"
                     ? { objectPosition: "40% center" }
                     : it.title === "Mkt Sensorial"
                     ? { objectPosition: "30% center" }
