@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
-import aiAgent from "@/assets/bahiarobo.png";
-import aiAvatar from "@/assets/ai-avatar.jpg";
+import aiAgent from "@/assets/movil.png";
+import aiAvatar from "@/assets/avataar.png";
 
 const blocks = [
   {
