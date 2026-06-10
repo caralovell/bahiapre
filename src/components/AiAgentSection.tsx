@@ -33,7 +33,7 @@ const AiAgentSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <ScrollReveal>
-          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
             <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-4">
               05
             </span>
@@ -50,7 +50,7 @@ const AiAgentSection = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 lg:gap-20 max-w-6xl mx-auto">
           {blocks.map((b, i) => (
             <ScrollReveal key={b.title} delay={i * 0.1}>
               <motion.div
@@ -59,19 +59,21 @@ const AiAgentSection = () => {
                 transition={{ type: "spring", stiffness: 220, damping: 20 }}
               >
                 <div
-                  className="absolute top-8 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"
+                  className="absolute top-12 left-1/2 -translate-x-1/2 w-72 h-72 md:w-[420px] md:h-[420px] rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"
                   style={{
                     background:
                       "radial-gradient(circle, hsl(var(--accent) / 0.35), transparent 70%)",
                   }}
                 />
 
-                <div className="relative h-[300px] md:h-[360px] w-full flex items-center justify-center mb-6">
+                <div className="relative h-[360px] md:h-[430px] w-full flex items-center justify-center mb-4">
                   <motion.img
                     src={b.img}
                     alt={b.title}
-                    className={`relative z-10 w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 ${
-                      i === 0 ? "max-w-[220px] md:max-w-[260px]" : "max-w-[280px] md:max-w-[340px]"
+                    className={`relative z-10 object-contain transition-transform duration-700 group-hover:scale-105 ${
+                      i === 0
+                        ? "w-[360px] md:w-[520px] lg:w-[620px] scale-[1.6] md:scale-[1.85]"
+                        : "w-[260px] md:w-[340px] lg:w-[390px]"
                     }`}
                     loading="lazy"
                     animate={{
