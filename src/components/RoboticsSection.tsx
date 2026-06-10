@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Bot, Utensils, Sparkles } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-import roboticaImg from "@/assets/robooo.png";
+import roboticaImg from "@/assets/bahiabot.png";
 
 const roboticsFeatures = [
   {
