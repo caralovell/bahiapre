@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
+import { Bot, Utensils, Sparkles } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-import aiAgent from "@/assets/movil.png";
-import aiAvatar from "@/assets/avataar.png";
+import roboticaImg from "@/assets/bahiabot.png";
 
-const blocks = [
+const roboticsFeatures = [
   {
-    title: "Agente IA",
-    img: aiAgent,
-    desc: "Asistente conversacional que automatiza reservas, atiende consultas del huésped y gestiona peticiones a recepción 24/7.",
+    icon: Bot,
+    title: "Robot asistente de hoteles",
+    desc: "Ayuda al huésped en recepción, lobby o zonas comunes, ofreciendo información, orientación y soporte básico de forma autónoma.",
   },
   {
-    title: "Avatar IA",
-    img: aiAvatar,
-    desc: "Conserje virtual humano y empático que recibe al huésped por voz y gesto en pantallas y tótems del lobby.",
+    icon: Utensils,
+    title: "Robot camarero",
+    desc: "Puede apoyar en tareas de servicio, transporte de productos o entregas internas, reduciendo tiempos y mejorando la experiencia del cliente.",
   },
 ];
 
-const AiAgentSection = () => {
+const RoboticsSection = () => {
   return (
     <section
-      id="inteligencia-artificial"
-      className="py-12 md:py-16 bg-background relative overflow-hidden"
+      id="robotica"
+      className="py-10 md:py-12 bg-surface relative overflow-hidden"
     >
       <div
         className="absolute inset-0 opacity-[0.04]"
@@ -33,77 +33,91 @@ const AiAgentSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <ScrollReveal>
-          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-            <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-4">
-              05
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-3">
+              06
             </span>
 
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
-              Inteligencia Artificial
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Robótica
             </h2>
 
-            <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed">
-              Soluciones de IA pensadas para mejorar la atención al huésped,
-              automatizar procesos del hotel y crear experiencias digitales más
-              cercanas, rápidas y personalizadas.
+            <p className="mt-4 text-base text-muted-foreground leading-relaxed">
+              Soluciones robóticas para hoteles que combinan atención al huésped,
+              apoyo operativo y una experiencia tecnológica diferencial.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 max-w-6xl mx-auto">
-          {blocks.map((b, i) => (
-            <ScrollReveal key={b.title} delay={i * 0.1}>
+        <div className="grid md:grid-cols-[1fr_0.9fr] gap-8 items-center max-w-4xl mx-auto">
+          <ScrollReveal direction="left">
+            <div className="grid gap-4">
+              {roboticsFeatures.map((item, index) => {
+                const Icon = item.icon;
+
+                return (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.08 }}
+                    whileHover={{ y: -3 }}
+                    className="flex gap-4 p-4 rounded-2xl bg-card border border-border hover:border-accent/50 transition-colors"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
+                      <Icon className="w-5 h-5 text-accent" strokeWidth={2} />
+                    </div>
+
+                    <div>
+                      <h3 className="text-sm font-bold text-foreground mb-1">
+                        {item.title}
+                      </h3>
+
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal direction="right" delay={0.1}>
+            <div className="relative flex justify-center">
               <motion.div
-                className="relative flex flex-col items-center text-center group"
-                whileHover={{ y: -8 }}
-                transition={{ type: "spring", stiffness: 220, damping: 20 }}
+                className="absolute -inset-5 rounded-[2rem] blur-3xl opacity-40"
+                style={{
+                  background:
+                    "radial-gradient(circle, hsl(var(--accent) / 0.25), transparent 70%)",
+                }}
+                animate={{ opacity: [0.25, 0.45, 0.25] }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+
+              <motion.div
+                className="relative z-10 w-full max-w-[360px] rounded-[2rem] overflow-hidden shadow-2xl border border-accent/20"
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 200, damping: 18 }}
               >
-                <div
-                  className="absolute top-8 left-1/2 -translate-x-1/2 w-72 h-72 md:w-96 md:h-96 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"
-                  style={{
-                    background:
-                      "radial-gradient(circle, hsl(var(--accent) / 0.35), transparent 70%)",
-                  }}
+                <img
+                  src={roboticaImg}
+                  alt="Robot asistente para hoteles"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
                 />
-
-                <div className="relative h-[360px] md:h-[430px] w-full flex items-center justify-center mb-6">
-                  <motion.img
-                    src={b.img}
-                    alt={b.title}
-                    className={`relative z-10 w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 ${
-                      i === 0
-                        ? "max-w-[330px] md:max-w-[430px]"
-                        : "max-w-[330px] md:max-w-[410px]"
-                    }`}
-                    loading="lazy"
-                    animate={{
-                      y: [0, -10, 0],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                      delay: i * 0.4,
-                    }}
-                  />
-                </div>
-
-                <div className="max-w-md">
-                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
-                    {b.title}
-                  </h3>
-
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    {b.desc}
-                  </p>
-                </div>
               </motion.div>
-            </ScrollReveal>
-          ))}
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
   );
 };
 
-export default AiAgentSection;
+export default RoboticsSection;
