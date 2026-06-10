@@ -33,7 +33,7 @@ const AiAgentSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <ScrollReveal>
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
             <span className="inline-block text-xs uppercase tracking-[0.3em] text-accent font-primary font-bold mb-4">
               05
             </span>
@@ -43,53 +43,57 @@ const AiAgentSection = () => {
             </h2>
 
             <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed">
-              Soluciones de IA pensadas para mejorar la atención al huésped, automatizar procesos del hotel y crear
-              experiencias digitales más cercanas, rápidas y personalizadas.
+              Soluciones de IA pensadas para mejorar la atención al huésped,
+              automatizar procesos del hotel y crear experiencias digitales más
+              cercanas, rápidas y personalizadas.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-10 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 max-w-5xl mx-auto">
           {blocks.map((b, i) => (
             <ScrollReveal key={b.title} delay={i * 0.1}>
               <motion.div
-                className="group block relative"
+                className="relative flex flex-col items-center text-center group"
                 whileHover={{ y: -8 }}
                 transition={{ type: "spring", stiffness: 220, damping: 20 }}
               >
                 <div
-                  className="absolute -inset-4 rounded-[2rem] blur-3xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"
+                  className="absolute top-8 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"
                   style={{
                     background:
                       "radial-gradient(circle, hsl(var(--accent) / 0.35), transparent 70%)",
                   }}
                 />
 
-                <div className="relative rounded-[2rem] overflow-hidden bg-card border border-border shadow-xl hover:border-accent/50 transition-all duration-300">
-                  <div
-                    className={`relative h-[280px] md:h-[340px] overflow-hidden ${
-                      i === 0 ? "bg-black" : "bg-muted"
+                <div className="relative h-[300px] md:h-[360px] w-full flex items-center justify-center mb-6">
+                  <motion.img
+                    src={b.img}
+                    alt={b.title}
+                    className={`relative z-10 w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 ${
+                      i === 0 ? "max-w-[220px] md:max-w-[260px]" : "max-w-[280px] md:max-w-[340px]"
                     }`}
-                  >
-                    <img
-                      src={b.img}
-                      alt={b.title}
-                      className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
-                        i === 0 ? "object-contain p-8" : "object-cover"
-                      }`}
-                      loading="lazy"
-                    />
-                  </div>
+                    loading="lazy"
+                    animate={{
+                      y: [0, -10, 0],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: i * 0.4,
+                    }}
+                  />
+                </div>
 
-                  <div className="p-6">
-                    <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
-                      {b.title}
-                    </h3>
+                <div className="max-w-md">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
+                    {b.title}
+                  </h3>
 
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                      {b.desc}
-                    </p>
-                  </div>
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                    {b.desc}
+                  </p>
                 </div>
               </motion.div>
             </ScrollReveal>
